@@ -1,0 +1,11 @@
+[Unit]
+Description=blynk-start
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/home/pi/blynk.sh
+User=pi
+
+[Install]
+WantedBy=multi-user.target
