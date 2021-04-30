@@ -1,0 +1,11 @@
+[Unit]
+Description=alarme-start
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/home/pi/alarme.sh
+User=pi
+
+[Install]
+WantedBy=multi-user.target
