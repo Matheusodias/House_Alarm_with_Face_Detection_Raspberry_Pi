@@ -40,6 +40,7 @@ int main(void){
     {
         pthread_t thread1_id;                   //Define a thread
         wiringPiSetup();                        //Inicia WiringPi
+        pinMode(buzzerPin, OUTPUT);             //Define o pino do buzzer como saída
         int sensor = rc_time(resistorPin);      //Recebe uma leitura do sensor
         if(digitalRead(onoffPin)==LOW)          //Caso o alarme esteja desativado pelo app, desliga o buzzer
         {            
