@@ -1,3 +1,3 @@
 #!/bin/bash
-cd Documents/Alarme
+cd /home/pi/Documents/Alarme
 ./prog
